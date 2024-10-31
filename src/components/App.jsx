@@ -13,8 +13,6 @@ export default function App() {
   const [writing, setWriting] = useState(false)
   const user = useAuthentication()
 
-  // This is a trivial app, so just fetch all the articles only when
-  // a user logs in. A real app would do pagination. Note that
   // "fetchArticles" is what gets the articles from the service and
   // then "setArticles" writes them into the React state.
   useEffect(() => {

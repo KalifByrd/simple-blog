@@ -14,7 +14,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: blue;
   color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;

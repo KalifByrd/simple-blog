@@ -19,7 +19,7 @@ export async function createArticle({ title, body }) {
   return { id: docRef.id, ...data }
 }
 
-// NOT FINISHED: This only gets the first 20 articles
+// This only gets the first 20 articles - will update later
 export async function fetchArticles() {
   const snapshot = await getDocs(
     query(collection(db, "articles"), orderBy("date", "desc"), limit(20))
@@ -33,7 +33,7 @@ export async function fetchArticles() {
         year: "numeric",
         month: "long",
         day: "numeric",
-      }), // Convert to a readable date format
+      }),
     }
   })
 }

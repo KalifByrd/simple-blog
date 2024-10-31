@@ -50,7 +50,6 @@ export default function App() {
         <Article article={article} />
       )}
 
-      {/* Floating Image */}
       <div className="floating-image-container">
         <img src={bookImage} alt="Floating" className="floating-image" />
       </div>

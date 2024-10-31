@@ -5,6 +5,7 @@ import ArticleEntry from "./ArticleEntry"
 import { SignIn, SignOut } from "./Auth"
 import { useAuthentication } from "../services/authService"
 import { fetchArticles, createArticle } from "../services/articleService"
+import bookImage from "./img/book.png"
 import "./App.css"
 
 export default function App() {
@@ -51,7 +52,7 @@ export default function App() {
 
       {/* Floating Image */}
       <div className="floating-image-container">
-        <img src="img/book.png" alt="Floating" className="floating-image" />
+        <img src={bookImage} alt="Floating" className="floating-image" />
       </div>
     </div>
   )

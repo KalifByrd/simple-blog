@@ -48,6 +48,11 @@ export default function App() {
       ) : (
         <Article article={article} />
       )}
+
+      {/* Floating Image */}
+      <div className="floating-image-container">
+        <img src="img/book.png" alt="Floating" className="floating-image" />
+      </div>
     </div>
   )
 }

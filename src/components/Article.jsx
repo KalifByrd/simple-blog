@@ -2,7 +2,7 @@ export default function Article({ article }) {
   return (
     <article>
       {!article ? (
-        <p>No article selected</p>
+        <p>No poem selected</p>
       ) : (
         <section>
           <h2>{article.title}</h2>
